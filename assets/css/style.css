@@ -68,12 +68,14 @@ aside{
 }
 
 aside .author .author-avatar{
-	height: 250px;
+	height: 200px;
+	
 	
 }
 
 aside .author .author-avatar img{
-	width: 100%;
+	/* width: 100%; */
+	max-width: 200px;
 	height: 100%;
 	/* margin: 0 auto; */
 	border-radius: 50%;
