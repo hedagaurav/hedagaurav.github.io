@@ -10,11 +10,20 @@ a{
 }
 
 body{
-	
+	margin: 0 50px;
+	border: 1px solid black;
+	/* min-width: 350px; */
+	height: 100vh;
+
+}
+
+header{
+	text-align: center;
+	border: 2px solid green;
 }
 
 main{
-	margin: 0 100px;
+	/* margin: 0 50px; */
 
 }
 
@@ -33,6 +42,30 @@ section.my-bg{
 	margin-left: 50px;
 }
 
+section.my-img {
+	height: 300px;
+	/* max-height: 700px; */
+	/* width: 900px; */
+	border: 2px red dashed;
+	opacity: 0.8;
+	display: flex;
+}
+
+section.my-img img{
+	height: 100%;
+	/* border: 3px palevioletred dashed; */
+	min-height:200px;
+	max-height: 400px;
+	/* width: ; */
+
+}
+
+main h3{
+	border: 2px solid maroon;
+	/* width: 100%; */
+
+}
+
 /* about-me div */
 div.about-me{
 	margin-left:50%;
@@ -42,7 +75,7 @@ div.about-me{
 
 /* social links */
 .social{
-	/* display: block; */
+	display: none;
 	position: absolute;
 	border:2px solid magenta;
 	top: 35%;
@@ -86,6 +119,42 @@ div.about-me{
 
 }
 
+/* margin: 0 50px; */
+@media screen and (max-width:400px){
+
+	body{
+		min-width: 350px;
+		margin: 0;
+		background-color: beige;
+		padding: 10px;
+		
+	}
+
+	section.my-img{
+		margin: 0 auto;
+		border-color: purple;
+	}
+
+
+	#main-site{
+		content: "";
+		background-color: hotpink;
+		position: fixed;
+		border-radius: 0;
+		width: 20px;
+		display: block;
+		top:0;
+		right: 0;
+		bottom: auto;
+		margin: 0;
+		height: 100vh;
+		font-size: 1em;
+		padding: 0;
+		line-height: 50vh;
+
+	}
+}
+/*
 @media screen and (max-width:1000px){
 	main{
 		min-height: calc(100vh - 10vh);
@@ -96,15 +165,6 @@ div.about-me{
 		width: 100%;
 		background-position: center;
 		margin: 0;
-	}
-
-	#main-site::before{
-		
-	}
-
-	#main-site::after{
-		/* font-family: FontAwesome; */
-		/* content: "\f107"; */
 	}
 
 	#main-site{
@@ -124,3 +184,4 @@ div.about-me{
 
 	}
 }
+*/
