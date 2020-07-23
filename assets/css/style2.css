@@ -23,7 +23,7 @@ header{
 }
 
 main{
-	/* margin: 0 50px; */
+	color: black;
 
 }
 
@@ -126,15 +126,19 @@ div.about-me{
 		min-width: 350px;
 		margin: 0;
 		background-color: beige;
-		padding: 10px;
+		/* padding: 10px; */
 		
 	}
 
 	section.my-img{
 		margin: 0 auto;
 		border-color: purple;
+		height: 200px;
 	}
 
+	section.my-img img{
+
+	}
 
 	#main-site{
 		content: "";
