@@ -12,13 +12,14 @@
 	<header class="">
 		<h1>Gaurav Heda</h1>
 		<p>The Fast Loading Homepage.</p>
+		<p>width:<span id="width"></span></p>
 	</header>
 	<main>
 		<!-- <section class="my-bg"></section> -->
 		<section class="my-img">
 			<!-- <img src="./assets/images/house.jpg" alt=""> -->
 			<!-- <img src="./assets/images/kristen.png" alt=""> -->
-			<img src="./assets/images/avatar.png" alt="">
+			<img src="./assets/images/kristen.png" alt="">
 			<div>
 				<h4>Hie Readers lorem ksiurj</h4>
 				<p>second line second line second line</p>
@@ -26,7 +27,7 @@
 			</div>
 
 		</section>
-		
+		<!-- <section class="align"></section> -->
 		<section class="social">
 			<a href="#"><i class="fa fa-facebook-official"></i></a>
 			<a href="#"><i class="fa fa-instagram"></i></a>
@@ -39,4 +40,18 @@
 		</a>
 	
 </body>
+<script>
+	// var total_width = screen.width;
+	// var available_width = screen.availWidth;
+	// var screen_width = document.body.clientWidth;
+	// var body = document.getElementsByName("body");
+	var width = document.getElementById("width");
+	setInterval(function(){
+		w = window.innerWidth;
+		// var oldw = w;
+		width.innerHTML = w;
+	},500);
+	console.log(window.innerWidth);
+	// console.log(available_width);
+</script>
 </html>

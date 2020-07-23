@@ -11,7 +11,7 @@ a{
 
 body{
 	margin: 0 50px;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	/* min-width: 350px; */
 	height: 100vh;
 
@@ -120,29 +120,37 @@ div.about-me{
 }
 
 /* margin: 0 50px; */
-@media screen and (max-width:400px){
+@media screen and (max-width:480px){
 
 	body{
 		min-width: 350px;
-		margin: 0;
+		/* margin: 0; */
 		background-color: beige;
 		/* padding: 10px; */
-		
+		/* position: relative; */
+		height: 100vh;
+		margin: auto 0;
+		/* border: 5px red dotted; */
 	}
 
-	header, main, footer {
-		width: calc(100vw - 20px);
-	}
-
+	header, main, footer { width: calc(100vw - 30px); }
+	header{ margin-bottom: 50px; }
 	section.my-img{
 		margin: 0 auto;
-		border: 2px dashed purple;
+		border: 2px dashed purple;	
+		/* border: 0; */
 		height: 200px;
+		width: 200px;
 		display: block;
 	}
 
 	section.my-img img{
-
+		margin: 0 auto;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: top center;
+		
 	}
 
 	#main-site{
@@ -160,7 +168,21 @@ div.about-me{
 		font-size: 1em;
 		padding: 0;
 		line-height: 100vh;
+		
+	}
 
+	#main-site:hover{
+		cursor:pointer;
+		/* color: tomato; */
+		color: cornflowerblue;
+		/* background-color: cornflowerblue; */
+	}
+	.align{
+		/* border: 1px solid orange; */
+		/* height: 50px; */
+		/* width: 50px; */
+		/* top: 50%; */
+		/* margin: 0 auto; */
 	}
 }
 /*
