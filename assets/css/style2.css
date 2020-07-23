@@ -20,6 +20,7 @@ body{
 header{
 	text-align: center;
 	border: 2px solid green;
+	margin-bottom: 2em;
 }
 
 main{
@@ -124,17 +125,17 @@ div.about-me{
 
 	body{
 		min-width: 350px;
-		/* margin: 0; */
 		background-color: beige;
 		/* padding: 10px; */
 		/* position: relative; */
 		height: 100vh;
-		margin: auto 0;
+		margin: 0;
+		/* margin: auto 0; */
 		/* border: 5px red dotted; */
 	}
 
-	header, main, footer { width: calc(100vw - 30px); }
-	header{ margin-bottom: 50px; }
+	/* header, main, footer { width: calc(100vw - 30px); } */
+	header{ margin-bottom: 2em; }
 	section.my-img{
 		margin: 0 auto;
 		border: 2px dashed purple;	
@@ -154,6 +155,23 @@ div.about-me{
 	}
 
 	#main-site{
+		right: 10px;
+		margin: 0;
+		padding: 0;
+		height: 40px;
+		width: 40px;
+		/* margin-right: 10px; */
+		font-size: 2em;
+		line-height: 40px;
+		color: black;
+		background-color: burlywood;
+	}
+
+	#main-site:hover{
+		color: red;
+	}
+
+	/* #main-site{
 		content: "";
 		background-color: hotpink;
 		position: fixed;
@@ -169,27 +187,11 @@ div.about-me{
 		padding: 0;
 		line-height: 100vh;
 		
-	}
-
-	#main-site:hover{
-		cursor:pointer;
-		/* color: tomato; */
-		color: cornflowerblue;
-		/* background-color: cornflowerblue; */
-	}
-	.align{
-		/* border: 1px solid orange; */
-		/* height: 50px; */
-		/* width: 50px; */
-		/* top: 50%; */
-		/* margin: 0 auto; */
-	}
+	} */
+	
 }
 /*
-@media screen and (max-width:1000px){
-	main{
-		min-height: calc(100vh - 10vh);
-	}
+
 
 	section.my-bg{
 		height: 100vh;

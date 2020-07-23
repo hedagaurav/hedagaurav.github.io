@@ -12,14 +12,14 @@
 	<header class="">
 		<h1>Gaurav Heda</h1>
 		<p>The Fast Loading Homepage.</p>
-		<p>width:<span id="width"></span></p>
+		<p>width:<span id="width"></span> / height:<span id="height"></span></p>
 	</header>
 	<main>
 		<!-- <section class="my-bg"></section> -->
 		<section class="my-img">
 			<!-- <img src="./assets/images/house.jpg" alt=""> -->
 			<!-- <img src="./assets/images/kristen.png" alt=""> -->
-			<img src="./assets/images/kristen.png" alt="">
+			<img src="./assets/images/kristen.png" alt="image">
 			<div>
 				<h4>Hie Readers lorem ksiurj</h4>
 				<p>second line second line second line</p>
@@ -46,10 +46,11 @@
 	// var screen_width = document.body.clientWidth;
 	// var body = document.getElementsByName("body");
 	var width = document.getElementById("width");
+	var height = document.getElementById("height");
 	setInterval(function(){
 		w = window.innerWidth;
-		// var oldw = w;
 		width.innerHTML = w;
+		height.innerHTML = window.innerHeight;
 	},500);
 	console.log(window.innerWidth);
 	// console.log(available_width);
